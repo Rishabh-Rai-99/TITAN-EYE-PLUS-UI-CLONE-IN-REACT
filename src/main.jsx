@@ -21,7 +21,9 @@ const router = createBrowserRouter([
     path:'kids',
     element:<KidsSection />
   },
-])
+],
+{ basename: "/TITAN-EYE-PLUS-UI-CLONE-IN-REACT" }
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
