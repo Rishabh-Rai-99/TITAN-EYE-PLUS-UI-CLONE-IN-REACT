@@ -1,34 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import {createBrowserRouter, Route,RouterProvider } from "react-router";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import { HashRouter, Routes, Route } from "react-router-dom";
 import WomenSection from "./pages/WomenSection";
 import KidsSection from "./pages/KidsSection";
 import Home from './components/Home.jsx';
 
-
-const router = createBrowserRouter([
-  {
-    path:'/',
-    element:<Home />
-  },
-  {
-    path:'/women',
-    element:<WomenSection />
-  },
-  {
-    path:'/kids',
-    element:<KidsSection />
-  },
-],
-{ basename: "/TITAN-EYE-PLUS-UI-CLONE-IN-REACT" }
-);
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}>  
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/women" element={<WomenSection />} />
+        <Route path="/kids" element={<KidsSection />} />
+      </Routes>
       <App />
-    </RouterProvider>
-  </StrictMode>,
-)
+    </HashRouter>
+  </StrictMode>
+);
