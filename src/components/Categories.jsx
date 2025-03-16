@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import OptionCard from './OptionCard';
 import category1 from "../json/category1.json";
 import category2 from "../json/category2.json";
@@ -7,6 +7,7 @@ import category3 from "../json/category3.json";
 
 
 const Categories = () => {
+  const location = useLocation();
   return (
     <div className='my-5'>
       <h3 className='text-2xl font-bold'>Shop By Category</h3>
@@ -20,7 +21,7 @@ const Categories = () => {
           MEN
           <div 
             className={`w-20 sm:w-32 -translate-x-1/2 left-[50%] h-1 top-10 absolute rounded-full transition-all duration-300 ${
-              window.location.pathname === '/' ? 'bg-[#35BBD1] opacity-100' : 'bg-transparent opacity-0'
+              location.pathname === '/' ? 'bg-[#35BBD1] opacity-100' : 'bg-transparent opacity-0'
             }`}
           ></div>
         </NavLink>
@@ -34,7 +35,7 @@ const Categories = () => {
           WOMEN
           <div 
             className={` w-20 sm:w-32 -translate-x-1/2 left-[50%] h-1  top-10 absolute rounded-full transition-all duration-300 ${
-              window.location.pathname === '/women' ? 'bg-[#35BBD1] opacity-100' : 'bg-transparent opacity-0'
+              location.pathname === '/women' ? 'bg-[#35BBD1] opacity-100' : 'bg-transparent opacity-0'
             }`}
           ></div>
         </NavLink>
@@ -48,23 +49,23 @@ const Categories = () => {
           KIDS
           <div 
             className={`w-20 sm:w-32 -translate-x-1/2 left-[50%] h-1 top-10 absolute rounded-full transition-all duration-300 ${
-              window.location.pathname === '/kids' ? 'bg-[#35BBD1] opacity-100' : 'bg-transparent opacity-0'
+              location.pathname === '/kids' ? 'bg-[#35BBD1] opacity-100' : 'bg-transparent opacity-0'
             }`}
           ></div>
         </NavLink>
       </div>
       {
-        window.location.pathname === '/' && <div>
+        location.pathname === '/' && <div>
         <OptionCard category={category1} />
       </div>
       }
       {
-        window.location.pathname === '/women' && <div>
+        location.pathname === '/women' && <div>
         <OptionCard category={category2} />
       </div>
       }
       {
-        window.location.pathname === '/kids' && <div>
+        location.pathname === '/kids' && <div>
         <OptionCard category={category3} />
       </div>
       }
