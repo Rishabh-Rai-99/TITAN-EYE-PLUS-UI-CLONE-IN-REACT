@@ -1,0 +1,8 @@
+[
+  { "id":"1" ,"category": "Eyeglasses", "image": "/images/one.svg" },
+  { "id":"2" ,"category": "Sunglasses", "image": "/images/two.svg" },
+  { "id":"3" ,"category": "Computer Vision", "image": "/images/three.svg" },
+  { "id":"4" ,"category": "Reading Glasses", "image": "/images/four.svg" },
+  { "id":"5" ,"category": "Contact Lenses", "image": "/images/five.svg" },
+  { "id":"6" ,"category": "Accessories", "image": "/images/six.svg" }
+]

@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+body{
+    font-family: "Manrope", sans-serif;
+}
+
+@media screen and (max-width:400px) {
+    .GuideCard{
+        width:70%;
+        height:100%;
+    }
+    .BudgetCard{
+        width:75%;
+    }
+}
+
+@import "tailwindcss";

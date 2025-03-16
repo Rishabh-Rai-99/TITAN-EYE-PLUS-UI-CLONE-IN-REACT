@@ -1,0 +1,27 @@
+[
+    {
+        "id": "6",
+        "brand_img": "/images/Brand_img_6.svg",
+        "brand_logo": "/images/Brand_logo_5.svg"
+      },
+      {
+        "id": "7",
+        "brand_img": "/images/Brand_img_7.svg",
+        "brand_logo": "/images/Brand_logo_5.svg"
+      },
+      {
+        "id": "8",
+        "brand_img": "/images/Brand_img_8.svg",
+        "brand_logo": "/images/Brand_logo_5.svg"
+      },
+      {
+        "id": "9",
+        "brand_img": "/images/Brand_img_9.svg",
+        "brand_logo": "/images/Brand_logo_5.svg"
+      },
+      {
+        "id": "10",
+        "brand_img": "/images/Brand_img_10.svg",
+        "brand_logo": "/images/Brand_logo_5.svg"
+      }
+]
