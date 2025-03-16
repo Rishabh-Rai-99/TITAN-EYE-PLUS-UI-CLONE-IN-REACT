@@ -8,7 +8,7 @@ const OptionCard = (props) => {
           return (
             <div key={card.id} className="text-center w-30 sm:w-auto cursor-pointer hover:scale-110 transition duration-75">
               <div className="p-1 rounded-full shadow flex justify-center">
-                <img className="rounded-full w-28 h-28" src={card.image} alt="" />
+                <img className="rounded-full w-28 h-28" src={`${process.env.PUBLIC_URL}${card.image}`} alt="" />
               </div>
               <h5 className="font-light text-[#272932] sm:font-semibold mt-2 whitespace-nowrap sm:mt-5">{card.category}</h5>
             </div>
