@@ -1,10 +1,14 @@
 import React from "react"
-import Home from "./components/Home";
+import Main from "./components/Main"
+import Navbar from "./components/Navbar"
+import HelpBar from "./components/HelpBar"
 function App() {
 
   return (
     <>
-      <Home />
+    <HelpBar />
+    <Navbar />
+    <Main />
     </>
   )
 }
